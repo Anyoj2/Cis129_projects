@@ -1,2 +1,2 @@
-# Cis129_projects
-Anyoj's cis messy codes. First time at coding and using an eviroment like this
+# Cis129_project
+Anyoj's CIS messy codes. First time coding and using an enviroment like this.
