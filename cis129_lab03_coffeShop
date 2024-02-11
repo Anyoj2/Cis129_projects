@@ -1,1 +1,41 @@
+#Angel Solis
+#Lab03 from CIS129
+#Coffeeshop
+
+#Inital values for the receipt
+
+print("Amount coffees bought?")
+Coffees=input()
+print("Amount of muffins boughts?")
+Muffins=input()
+
+#Formula for the total with tax
+Total_Muffins= int(Muffins)* 4
+a= Total_Muffins
+Total_Coffees= int(Coffees) * 5
+b= Total_Coffees
+Subtotal= int(b) + int(a)
+c= Subtotal
+tax= (1/(16+(2/3)))*int(c)
+d = tax
+Total= d + c
+
+#Results
+print(
+    "   *******************************\n\
+    My Coffee and Muffin Shop\n \
+    Number of coffees bought?\n \
+    "+ str(Muffins) +"\n\
+    Number of coffess bought?\n\
+    "+ str(Coffees)+"\n\
+    ***********************************\n\
+    \n\
+    ***********************************\n\
+    My Coffee and Muffin Shop Receipt\n\
+    Coffee at $5 each:$ "+ str(b) +" \n\
+    Muffins at $4 each:$ "+ str(a) +"\n\
+    6% tax:$"+ str(d) +"\n\
+    -------\n\
+    Total: $"+ str(Total) +"\n\
+    ***********************************")
 
