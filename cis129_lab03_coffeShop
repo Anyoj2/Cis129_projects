@@ -1,41 +1,66 @@
 #Angel Solis
-#Lab03 from CIS129
+#Lab03 CIS129
 #Coffeeshop
 
-#Inital values for the receipt
+#Inital values for the receipt and presentation---------------------
 
-print("Amount coffees bought?")
+print("Welcome to the CoffeeShop new customer!, what is your name?")
+Username= input()
+print("Hello " + str(Username) +", we are glad to have you here.\n\
+    We offer you in our menu the following products:\n\
+     Coffee $5 (American style)\n\
+     Muffin $3\n\
+     Bearcrawl (pretzel flaviour) $3 \n\
+     The great pink (a donut) $6 \n\
+    How many bearcrawls you want?")
+
+#Define variables------------------------------------
+Bearcrawls= input()
+print("And amount great pinks bought?")
+GP=input()
+print("And amount coffees bought?")
 Coffees=input()
-print("Amount of muffins boughts?")
+print("And Amount of muffins boughts?")
 Muffins=input()
 
-#Formula for the total with tax
+#Prices and formula for the total with tax-----------
+Total_crawls= int(Bearcrawls)*3
+x= Total_crawls
+Total_GP= int(GP)*6
+y= Total_GP
 Total_Muffins= int(Muffins)* 4
 a= Total_Muffins
 Total_Coffees= int(Coffees) * 5
 b= Total_Coffees
-Subtotal= int(b) + int(a)
+
+Subtotal= int(b) + int(a) + int(x) + int(y)
 c= Subtotal
 tax= (1/(16+(2/3)))*int(c)
 d = tax
 Total= d + c
-
-#Results
+      
+#End receipt and farewell------------------------
 print(
     "   *******************************\n\
     My Coffee and Muffin Shop\n \
+    Number of bearcrawls bought?\n \
+    "+str(Bearcrawls)+" \n\
+    Number of great pinks bought?\n \
+    "+str(GP)+" \n\
     Number of coffees bought?\n \
     "+ str(Muffins) +"\n\
     Number of coffess bought?\n\
-    "+ str(Coffees)+"\n\
+    "+ str(Coffees) +"\n\
     ***********************************\n\
     \n\
     ***********************************\n\
     My Coffee and Muffin Shop Receipt\n\
+    Bearcrawls at $3 each:"+str(x)+"\n\
+    Great pink at $6 each:" +str(y)+"\n\
     Coffee at $5 each:$ "+ str(b) +" \n\
     Muffins at $4 each:$ "+ str(a) +"\n\
     6% tax:$"+ str(d) +"\n\
     -------\n\
     Total: $"+ str(Total) +"\n\
-    ***********************************")
-
+    ***********************************\n\
+    THANKS FOR SHOPPING WITH US "+str(Username)+"!")
