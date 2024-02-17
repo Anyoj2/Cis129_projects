@@ -1,6 +1,6 @@
 #Angel Solis
-#Lab03 CIS129
-#Coffeeshop
+#CIS129
+#Lab03
 
 #Inital values for the receipt and presentation---------------------
 
@@ -57,4 +57,17 @@ print(
     "+ str(Coffees) +"\n\
     Number of muffins bought?\n \
     "+ str(Muffins) +"\n\
-    ***********************************\
+    ***********************************\n\
+    \n\
+    ***********************************\n\
+    My Coffee and Muffin Shop Receipt\n\
+    Bearcrawls at $3 each:"+str(x)+"\n\
+    Great pink at $6 each:" +str(y)+"\n\
+    Coffee at $5 each:$ "+ str(b) +" \n\
+    Muffins at $4 each:$ "+ str(a) +"\n\
+    6% tax:$"+ str(d) +"\n\
+    -------\n\
+    Total: $"+ str(Total) +"\n\
+    ***********************************\n\
+    THANKS FOR SHOPPING WITH US "+str(Username)+"!")
+
