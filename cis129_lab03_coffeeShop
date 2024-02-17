@@ -1,36 +1,41 @@
 #Angel Solis
-#Lab03 CIS129
-#Coffeeshop
+#CIS129
+#Lab03
 
 #Inital values for the receipt and presentation---------------------
 
-print("Welcome to the CoffeeShop new customer!, what is your name?")
-Username= input()
+print("Welcome to the CoffeeShop new customer! what is your name?")
+Username= input('Customer:')
 print("Hello " + str(Username) +", we are glad to have you here.\n\
     We offer you in our menu the following products:\n\
      Coffee $5 (American style)\n\
      Muffin $3\n\
      Bearcrawl (pretzel flaviour) $3 \n\
      The great pink (a donut) $6 \n\
-    How many bearcrawls you want?")
+    How many bearcrawls you want? Please use an integer")
 
 #Define variables------------------------------------
-Bearcrawls= input()
+Bearcrawls= input('Amount:')
 print("And amount great pinks bought?")
-GP=input()
+GP=input('Amount:')
 print("And amount coffees bought?")
-Coffees=input()
+Coffees=input('Amoount:')
 print("And Amount of muffins boughts?")
-Muffins=input()
+Muffins=input('Amount:')
+
+MuffPrice= 4
+GPinkprice= 6 #Expensive
+CafiPrice= 5  #Coffee
+BearucraluPrice= 3 #Bearcrawl
 
 #Prices and formula for the total with tax-----------
-Total_crawls= int(Bearcrawls)*3
+Total_crawls= int(Bearcrawls)*BearucraluPrice
 x= Total_crawls
-Total_GP= int(GP)*6
+Total_GP= int(GP)*GPinkprice
 y= Total_GP
-Total_Muffins= int(Muffins)* 4
+Total_Muffins= int(Muffins)* MuffPrice
 a= Total_Muffins
-Total_Coffees= int(Coffees) * 5
+Total_Coffees= int(Coffees) * CafiPrice
 b= Total_Coffees
 
 Subtotal= int(b) + int(a) + int(x) + int(y)
@@ -41,16 +46,17 @@ Total= d + c
       
 #End receipt and farewell------------------------
 print(
-    "   *******************************\n\
-    My Coffee and Muffin Shop\n \
-    Number of bearcrawls bought?\n \
+    "         HERE YOU RECEIPT\n\
+**********************************\n\
+    My Coffee and Muffin Shop\n\
+    Number of bearcrawls bought?\n\
     "+str(Bearcrawls)+" \n\
     Number of great pinks bought?\n \
     "+str(GP)+" \n\
-    Number of coffees bought?\n \
-    "+ str(Muffins) +"\n\
     Number of coffess bought?\n\
     "+ str(Coffees) +"\n\
+    Number of muffins bought?\n \
+    "+ str(Muffins) +"\n\
     ***********************************\n\
     \n\
     ***********************************\n\
@@ -64,3 +70,4 @@ print(
     Total: $"+ str(Total) +"\n\
     ***********************************\n\
     THANKS FOR SHOPPING WITH US "+str(Username)+"!")
+
