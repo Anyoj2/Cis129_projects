@@ -1,4 +1,4 @@
-""""" Exercises 3.1"""
+""""" Exercise 3.1"""
 #Angel Solis
 #CIS129 Mod05 assignment
 #03/06/2024
