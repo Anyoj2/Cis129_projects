@@ -7,6 +7,8 @@
 #Dice game form Assignment 7 which I decided to make the winner
 #the one with the greater value
 
+#Still, no proof against misinputs
+
 import random
 
 
