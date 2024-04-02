@@ -37,27 +37,33 @@ def askSells(A,B,C):
     while True:
                 while True:
                     try:
-                        A[2] = int(input("How many tickets sold for A section?"))
+                        A[2] = int(input("How many tickets sold for A section?\n"))
                         if A[2] > A[0]:
                             print("It cant be, we only have ", A[0])
+                        elif A[2] < 0:
+                            print("Cant be negative!")
                         else:
                             break
                     except ValueError:
                         print("An integer please")
                 while True:
                     try:
-                        B[2] = int(input("How many tickets sold for B section?"))
+                        B[2] = int(input("How many tickets sold for B section?\n"))
                         if B[2] > B[0]:
                             print("It cant be, we only have ", B[0])
+                        elif B[2] < 0:
+                            print("Cant be negative!")
                         else:
                             break
                     except ValueError:
                         print("An integer please")
                 while True:
                     try:
-                        C[2] = int(input("How many tickets sold for C section?"))
+                        C[2] = int(input("How many tickets sold for C section?\n"))
                         if C[2] > C[0]:
                             print("It cant be, we only have", C[0])
+                        elif C[2] < 0:
+                            print("Cant be negative!")
                         else:
                             break
                     except ValueError:
@@ -83,13 +89,3 @@ def displayResults(total,A,B,C):
     print("C section:",cLeft,"seats")
 
 main()
-
-
-
-
-
-
-
-
-
-
