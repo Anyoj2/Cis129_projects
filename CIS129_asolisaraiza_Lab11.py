@@ -17,7 +17,7 @@ with open('grades.txt', mode='r') as file:
     grades = [int(grade.strip()) for grade in grades]
     average = sum(grades)/len(grades)
     print(f'The average found in grade text is {average}\
-by count of {len(grades)} grades and a total of {sum(grades)}.')     ')
+by count of {len(grades)} grades and a total of {sum(grades)}.')
 
 #Part 9.3
 #I expected another .txt ordered, not an excel.
